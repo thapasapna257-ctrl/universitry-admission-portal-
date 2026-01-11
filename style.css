@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: rgb(3, 82, 172);
+    padding: 10px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    box-shadow: 0 2px 5px rgba(5, 0, 0, 0.2);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left .logo-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.nav-left .logo-name {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nav-right a {
+    color: white;
+    margin-left: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-right a i {
+    color: black;
+    margin-right: 5px;
+}
+
+.nav-right a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    background-color: rgb(1, 77, 128);
+}
+
+.hero {
+    color: white;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.apply-btn {
+    background-color: white;
+    color: rgb(0, 2, 2);
+    padding: 10px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.apply-btn:hover {
+    background-color: #e0e0ff;
+}
+
+
+.admission-form {
+    background-color: azure;
+    width: 50%;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.admission-form p,h1 {
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+}
+
+h2, h3 {
+    color: rgb(27, 1, 218);
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(2, 45, 94);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(65, 154, 244);
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about, .gallery {
+    width: 80%;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.about h2 {
+    margin-bottom: 10px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.footer {
+    background-color: rgb(3, 82, 172);
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-top: 190px;
+
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+}
+
+
+@media (max-width: 768px) {
+    .nav-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .nav-right a {
+        margin: 5px 0;
+    }
+
+    .admission-form {
+        width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+}
